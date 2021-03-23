@@ -150,7 +150,7 @@ ul li input[type=text] {
 }
 
 .edit-mode input[type=text] {
-  display:inline-block;
+  display: inline-block;
   width: 224px;
 }
 
