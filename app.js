@@ -27,6 +27,7 @@ var createNewTaskElement=function(taskString){
   //input (text)
   var editInput=document.createElement("input");//text
   editInput.classList.add("app__input_text");
+  editInput.classList.add("app__task");
   //button.edit
   var editButton=document.createElement("button");//edit button
   //button.delete
@@ -43,7 +44,6 @@ var createNewTaskElement=function(taskString){
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
   editButton.className="app__btn app__btn_edit";
 
-  deleteButton.innerText="Delete";
   deleteButton.className="app__btn app__btn_delete";
   deleteButtonImg.src='./remove.svg';
   deleteButton.appendChild(deleteButtonImg);
