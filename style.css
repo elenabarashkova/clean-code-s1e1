@@ -13,8 +13,8 @@
 .app__title {
   list-style: none;
 }
-.app__input_text,
-.app__input_checkbox,
+.app__input-text,
+.app__input-checkbox,
 .app__btn {
   outline: none;
 }
@@ -27,7 +27,7 @@
 .header__matrix {
   margin: 0;
 }
-.header__matrix__pic {
+.header__matrix-pic {
   width: 100%;
   display: block;
 }
@@ -47,13 +47,14 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.app__add-item__wrap {
+.app__wrap {
   display: flex;
 }
 .app_add-item {
   padding: 16px 0;
 }
-.app__task {
+.app__input-text,
+.app__task-name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -85,7 +86,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.app__input_text {
+.app__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,7 +98,7 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.app__input_text:focus {
+.app__input-text:focus {
   color: #333;
 }
 
@@ -126,54 +127,55 @@
   vertical-align: middle;
 }
 
-.app__list-item > .app__input_checkbox {
+.app__list-item > .app__input-checkbox {
   margin: 0 10px;
 }
-.app__list-item > .app__task_name {
+.app__list-item > .app__task-name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.app__list-item > .app__task_name.app__task {
+.app__list-item > .app__task-name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.app__input_text {
+.app__input-text {
   width: 226px;
 }
 .app__list-item > .app__btn_delete:hover {
   color: #cf2323;
 }
-.app__btn_delete .app__btn_delete__icon {
+.app__btn_delete .app__btn_delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.app__btn_delete .app__btn_delete__icon:hover {
+.app__btn_delete .app__btn_delete-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed .app__task {
+#completed .app__input-text,
+#completed .app__task-name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.app__list .app__input_text {
+.app__list .app__input-text {
   display: none;
 }
 
-.app__edit-mode .app__input_text {
+.app__edit-mode .app__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.app__edit-mode .app__task_name {
+.app__edit-mode .app__task-name {
   display: none;
 }
-.app__list-item.app__edit-mode .app__task_name.app__task {
+.app__list-item.app__edit-mode .app__task-name {
   display: none;
 }

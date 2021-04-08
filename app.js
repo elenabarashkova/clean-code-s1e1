@@ -21,21 +21,20 @@ var createNewTaskElement=function(taskString){
   listItem.classList.add("app__list-item");
   //input (checkbox)
   var checkBox=document.createElement("input");//checkbx
-  checkBox.classList.add("app__input_checkbox");
+  checkBox.classList.add("app__input-checkbox");
   //label
   var label=document.createElement("label");//label
   //input (text)
   var editInput=document.createElement("input");//text
-  editInput.classList.add("app__input_text");
-  editInput.classList.add("app__task");
+  editInput.classList.add("app__input-text");
   //button.edit
   var editButton=document.createElement("button");//edit button
   //button.delete
   var deleteButton=document.createElement("button");//delete button
   var deleteButtonImg=document.createElement("img");//delete button image
-  deleteButtonImg.classList.add("app__btn_delete__icon");
+  deleteButtonImg.classList.add("app__btn_delete-icon");
   label.innerText=taskString;
-  label.className='app__task app__task_name';
+  label.className='app__task-name';
 
   //Each elements, needs appending
   checkBox.type="checkbox";
